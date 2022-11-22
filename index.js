@@ -16,9 +16,11 @@ The function should:
 */
 
 
-function createMenuItem(/*Your code here*/){
-  /*Your code here*/
+function createMenuItem(name, price, category){
+  return {name, price, category};
 }
+
+console.log(createMenuItem('tacos', 8, 'Lunch'));
 
 
 
@@ -31,6 +33,9 @@ Test your createMenuItems function by doing the following:
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
+console.log(createMenuItem('pizza', 5, 'Lunch'));
+console.log(createMenuItem('pancakes', 7, 'Breakfast'));
+console.log(createMenuItem('burger', 9, 'Dinner'));
 
 
 

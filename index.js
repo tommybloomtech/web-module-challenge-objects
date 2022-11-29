@@ -17,7 +17,11 @@ The function should:
 
 
 function createMenuItem(name, price, category){
-  return {name, price, category};
+  const newMenuItems = {};
+  newMenuItems.name = name;
+  newMenuItems.price = price;
+  newMenuItems.category = category;
+  return newMenuItems;
 }
 
 console.log(createMenuItem('tacos', 8, 'Lunch'));
@@ -130,8 +134,8 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(name, rating) {
-  return `${name[rating].name} gave the restaurant a ${name[rating].rating} star review and their feedback was: ${name[rating].feedback}`;
+function getReviewByIndex(arr, item) {
+  return `${arr[item].name} gave the restaurant a ${arr[item].rating} star review and their feedback was: ${arr[item].feedback}`;
 }
 
 console.log(getReviewByIndex(reviews, 4));
@@ -150,10 +154,11 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+  return `${array[array.length -1].name} gave the restaurant a ${array[array.length -1].rating} star review, and their feedback was ${array[array.length -1].feedbacl}`;
 } 
 
+console.log(getLastReview(reviews));
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
@@ -172,9 +177,6 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
-  }
 
   
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪💪   
